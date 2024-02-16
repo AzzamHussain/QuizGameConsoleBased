@@ -3,8 +3,11 @@ import 'Medium.dart';
 import 'Difficult.dart';
 import "dart:io";
 void main(){
-  print('Welcome to the Quiz Game!');
-  print('Choose your level: ');
+  print('****************************OBJECT ORIENTED PROGRAMMING********************************');
+
+  print('*****************************Quiz Will Start Soon**************************************');
+
+  print('Select the difficulty level: ');
   print('1. Easy');
   print('2. Medium');
   print('3. Hard');
@@ -35,16 +38,16 @@ void main(){
       print('${j + 1}. ${options[j]}');
     }
 
-    stdout.write('Enter your answer (a, b, c, or d): ');
-    String? userAnswer = stdin.readLineSync();
+    stdout.write('Enter your answer (1,2,3 & 4): ');
+    String? correctOption = stdin.readLineSync();
 
-    if (userAnswer == questions[i]['answer']) {
-      print('Correct!');
+    if (correctOption == questions[i]['answer']) {
+      print('********GOOD JOB*******');
       score++;
     } else {
-      print('Incorrect! The correct answer is: ${questions[i]['answer']}');
+      print('************INCORRECT******************\nThe correct answer is: ${questions[i]['answer']}');
     }
   }
 
-  print('\nQuiz ended! Your score: $score out of ${questions.length}');
+  print('\n Your score: $score out of ${questions.length}');
 }
