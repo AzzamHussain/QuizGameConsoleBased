@@ -15,25 +15,25 @@ void main(){
   stdout.write('Enter the level number (1, 2, or 3): ');
   String level = stdin.readLineSync()!;
 
-  List<Map<String, dynamic>> questions = [];
+  List<Map<String, dynamic>>  Qns = [];
   switch (level) {
     case '1':
-      questions = levelOne;
+      Qns = levelOne;
       break;
     case '2':
-      questions =leveltwo;
+      Qns =leveltwo;
       break;
     case '3':
-      questions = levelthree;
+      Qns = levelthree;
       break;
     default:
       print('Invalid level selection. Exiting...');
       return;
   }
   int score=0;
-   for (int i = 0; i < questions.length; i++) {
-    print('\nQuestion ${i + 1}: ${questions[i]['question']}'); //i+1 is used to display the question number
-    List<String> options = questions[i]['options'];
+   for (int i = 0; i < Qns.length; i++) {
+    print('\nQuestion ${i + 1}: ${Qns[i]['Qn']}'); //i+1 is used to display the question number
+    List<String> options = Qns[i]['options'];
     for (int j = 0; j < options.length; j++) {
       print('${j + 1}. ${options[j]}');
     }
@@ -41,13 +41,13 @@ void main(){
     stdout.write('Enter your answer (1,2,3 & 4): ');
     String? correctOption = stdin.readLineSync();
 
-    if (correctOption == questions[i]['answer']) {
+    if (correctOption == Qns[i]['answer']) {
       print('********GOOD JOB*******');
       score++;
     } else {
-      print('************INCORRECT******************\nThe correct answer is: ${questions[i]['answer']}');
+      print('************INCORRECT******************\nThe correct answer is: ${Qns[i]['answer']}');
     }
   }
 
-  print('\n Your score: $score out of ${questions.length}');
+  print('\n Your score: $score out of ${Qns.length}');
 }

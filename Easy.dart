@@ -11,11 +11,11 @@ List<Map<String,dynamic>> levelOne=[
   {
     'Qn':'Who invented OOP?',
     'options': [' Dennis Ritchie',' Alan Key',' Adele Golang',' Andrea Ferro'],
-    'answer': 'Dennis Ritchie'
+    'answer': '1'
   },
   {
     'Qn':'Which is not a feature of OOP in general definitions?',
-    'options1': ['Efficient Code','Code reusability','Modularity','Duplicate/Redundant data'],
+    'options': ['Efficient Code','Code reusability','Modularity','Duplicate/Redundant data'],
     'answer': 'Duplicate/Redundant data'
   },
    {
