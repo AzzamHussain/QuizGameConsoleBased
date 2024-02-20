@@ -11,7 +11,7 @@ List<Map<String,dynamic>> levelOne=[
   {
     'Qn':'Who invented OOP?',
     'options': [' Dennis Ritchie',' Alan Key',' Adele Golang',' Andrea Ferro'],
-    'answer': '1'
+    'answer': 'Dennis Ritchie'
   },
   {
     'Qn':'Which is not a feature of OOP in general definitions?',

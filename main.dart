@@ -13,7 +13,7 @@ void main(){
   print('3. Hard');
 
   stdout.write('Enter the level number (1, 2, or 3): ');
-  String level = stdin.readLineSync()!;
+  String? level = stdin.readLineSync()!;
 
   List<Map<String, dynamic>>  Qns = [];
   switch (level) {
@@ -38,7 +38,7 @@ void main(){
       print('${j + 1}. ${options[j]}');
     }
 
-    stdout.write('Enter your answer (1,2,3 & 4): ');
+    stdout.write('Enter your answer: ');
     String? correctOption = stdin.readLineSync();
 
     if (correctOption == Qns[i]['answer']) {
